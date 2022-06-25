@@ -1,14 +1,15 @@
 const $gnbFixed = document.querySelector(".gnb-fixed");
 
 function fixedDisplay(){
-  $gnbFixed.classList.toggle("invisible");
+  $gnbFixed.classList.toggle("blind");
 };
 
-document.addEventListener('scroll', function(){
-  let currentScrollValue = document.documentElement.scrollTop;
-  if(currentScrollValue >= 624) {
-    $gnbFixed.classList.remove("invisible");
-  }else if(currentScrollValue < 624){
-    $gnbFixed.classList.add("invisible");
+window.addEventListener("scroll", (event) => {
+  let scrollY = this.scrollY;
+  if (scrollY >= 624){
+    $gnbFixed.classList.remove("blind");
+  } else if (scrollY < 624){
+    $gnbFixed.classList.add("blind");
   }
 });
+

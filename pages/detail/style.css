@@ -109,6 +109,7 @@ body {
 
 .star {
   margin-right: 0.4rem;
+  align-items: center;
 }
 
 .title-satisfaction-level {
@@ -123,6 +124,7 @@ body {
 }
 
 .title-review-num {
+  width: 7rem;
   color: rgb(34, 34, 34);
   font-size: 1.4rem;
   line-height: 20px;
@@ -186,6 +188,15 @@ body {
   width: 56rem;
   grid-column: 1 / 3;
   grid-row: 1 / 3;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.img-grid img:nth-child(3){
+  border-radius: 0 0.8rem 0 0;
+}
+
+.img-grid img:nth-child(5){
+  border-radius: 0 0 0.8rem 0;
 }
 
 /* gnb-fixed */
@@ -426,3 +437,147 @@ body {
   padding-top: 2.4rem;
   justify-content: space-between;
 }
+
+/* reservation info */
+
+.reservation-title {
+  height: 12.8rem;
+  padding-top: 4.8rem;
+  padding-bottom: 2.4rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.host-title {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+span.host-title-text {
+  color: var(--text-black);
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.host-room-info {
+  flex-direction: row;
+  color: var(--text-black);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.host-room-info .title-space {
+  line-height: 0rem;
+}
+
+.host-profile-img {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+  overflow: hidden;
+  height: 100%;
+  background-image: url(https://a0.muscache.com/im/pictures/user/6d48a3b1-0271-47d6-a3d5-2536d63ba200.jpg?im_w=240);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.room-checkin-info {
+  height: 24.4rem;
+  padding: 3.2rem 0;
+  border-top: 0.1rem solid rgb(221, 221, 221);
+  border-bottom: 0.1rem solid rgb(221, 221, 221);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.room-checkin-info-text {
+  margin-left: 1.6rem;
+}
+
+.room-checkin-info-text span:nth-child(1){
+  color: var(--text-black);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.aircover-banner {
+  padding: 3.2rem 0;
+  border-bottom: 0.1rem solid rgb(221, 221, 221);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--text-black);
+}
+
+.aircover-banner img{
+  height: 2.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.aircover-banner p{
+  margin-bottom: 1.6rem;
+}
+
+.text-viewmore{
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.host-explain {
+  color: var(--text-black);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 3.2rem 0;
+  border-bottom: 0.1rem solid rgb(221, 221, 221);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.host-explain p {
+  padding: 0 0 4.8rem 0;
+}
+
+.sleeping-place{
+  padding: 4.8rem 0;
+  border-bottom: 0.1rem solid rgb(221, 221, 221);
+}
+
+.sleeping-place-title{
+  justify-content: space-between;
+  padding-bottom: 2.4rem;
+}
+
+.sleeping-title{
+  color: var(--text-black);
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.toggle-indicator {
+  margin-right: 1.6rem;
+  color: var(--text-black);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.toggle-button {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  color: rgb(221, 221, 221);
+  border-color: rgb(221, 221, 221);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.toggle-button.prev {
+  margin-right: 1.2rem;
+}
+

@@ -171,10 +171,26 @@ html {
 	font-size: 62.5%;
 }
 
-.invisible {
+.blind {
 	display:none;
 }
 
 .flex {
 	display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
