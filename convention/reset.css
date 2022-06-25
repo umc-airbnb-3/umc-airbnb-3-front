@@ -91,7 +91,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: NotoSansKR;
+	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif
 }
 article,
 aside,
@@ -169,4 +169,12 @@ input:focus {
 
 html {
 	font-size: 62.5%;
+}
+
+.invisible {
+	display:none;
+}
+
+.flex {
+	display: flex;
 }
