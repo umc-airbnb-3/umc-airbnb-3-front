@@ -13,3 +13,18 @@ window.addEventListener("scroll", (event) => {
   }
 });
 
+//============
+function goPrevious() {
+  document.querySelector(".sleeping-place-scroll-snap").scrollBy({ 
+    left: - 670,
+    behavior: 'smooth' 
+  });
+};
+
+function goNext() {
+  document.querySelector(".sleeping-place-scroll-snap").scrollBy({ 
+    left: 670,
+    behavior: 'smooth' 
+  });
+};
+
