@@ -1,7 +1,7 @@
 @import "./variables.css";
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
@@ -85,13 +85,13 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-family: NotoSansKR;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: NotoSansKR;
 }
 article,
 aside,
@@ -104,70 +104,69 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+	display: block;
 }
 body {
-  line-height: 1;
-  background: var(--bgPointColor);
+	line-height: 1;
+	background: var(--bgPointColor);
 }
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 blockquote,
 q {
-  quotes: none;
+	quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+	content: "";
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 button {
-  background: inherit;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
+	background: none;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	cursor: pointer;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-  outline: none;
+	color: inherit;
+	text-decoration: none;
+	outline: none;
 }
 
 /* 방문한 적 있는 링크 */
 a:visited {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 input {
-  -webkit-appearance: none; /* Safari and Chrome */
-  -moz-appearance: none; /* Firefox */
-  appearance: none;
+	-webkit-appearance: none; /* Safari and Chrome */
+	-moz-appearance: none; /* Firefox */
+	appearance: none;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input:focus {
-  outline: none;
+	outline: none;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
-
