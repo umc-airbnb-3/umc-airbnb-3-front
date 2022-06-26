@@ -154,7 +154,7 @@ nav {
 	border: 0.1rem solid #ebebeb;
 }
 #nav-filter {
-	width: 7.7em;
+	width: max-content;
 	height: 4.8rem;
 	display: flex;
 	flex-direction: row;
@@ -166,6 +166,7 @@ nav {
 	padding: 10px;
 }
 #nav-filter > div {
+	width: max-content;
 	font-size: 1.2em;
 	padding-left: 10px;
 }
