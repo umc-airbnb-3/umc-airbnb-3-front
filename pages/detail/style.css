@@ -872,10 +872,20 @@ span.host-title-text {
   height: 63.6rem;
 }
 
+.comments-card{
+  margin-right: 9.5rem;
+  height: 21.2rem;
+}
+
+.comment-profile {
+  margin-bottom: 1.6rem;
+}
+
 .comment-profile-img {
   height: 5.6rem;
   width: 5.6rem;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .comment-profile-img img {
@@ -884,4 +894,36 @@ span.host-title-text {
   position: static;
   object-fit: cover;
   vertical-align: bottom;
+}
+
+.comment-profile-info {
+  margin-left: 1.2rem;
+  justify-content: center;
+}
+
+.comment-profile-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.comment-profile-date {
+  font-size: 1.4rem;
+  color: #717171;
+}
+
+.comments-card span{
+  height: 7rem;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comment-view-more {
+  margin-top: 0.8rem;
+  text-decoration: underline;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
