@@ -59,27 +59,35 @@ get_category_article(1, 0);
 
 /*네비게이션 바 버튼*/
 let nav_btn = document.querySelectorAll("#nav-search_bar > .nav-button");
-for (let i = 0; i < nav_btn.length; i++) {
-	nav_btn[i].addEventListener("click", click_nav_btn);
-}
-function click_nav_btn(e) {
+nav_btn.forEach((element, index) => {
+	element.addEventListener("click", function () {
+		click_nav_btn(index);
+	});
+});
+function click_nav_btn(index) {
 	const nav_click_background = document.querySelector("#nav-search_bar-click");
 	nav_click_background.style.display = "block";
 	const nav_click_menu = document.querySelector("#nav-search_bar-click-menu");
 	nav_click_menu.style.display = "block";
 	nav_click_menu.animate({ height: "16rem" }, 200);
+	const clicked_button = document.querySelector(`#nav-bottom-click>div>button.nav-bottom-menu:nth-of-type(${index + 1})`);
+	clicked_button.style.background = "white";
+	clicked_button.style.boxShadow = "0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%)";
 	setTimeout(() => {
 		const element = document.querySelector("#nav-search_bar-click-menu");
 		element.style.height = "16rem";
 	}, 200);
-	console.log(e.target);
+
+	document.querySelector("#nav-search_bar-click").addEventListener("click", function () {
+		document.querySelector("#nav-search_bar-click").style.display = "none";
+		const element = document.querySelector("#nav-search_bar-click-menu");
+		element.style.height = "8rem";
+		element.style.display = "none";
+		clicked_button.style.background = "inherit";
+		clicked_button.style.boxShadow = "none";
+	});
+	console.log(index);
 }
-document.querySelector("#nav-search_bar-click").addEventListener("click", function () {
-	document.querySelector("#nav-search_bar-click").style.display = "none";
-	const element = document.querySelector("#nav-search_bar-click-menu");
-	element.style.height = "8rem";
-	element.style.display = "none";
-});
 
 /*네비게이션 메뉴 버튼*/
 let nav_menu = document.querySelectorAll("#nav-menu>div.menu-item");
