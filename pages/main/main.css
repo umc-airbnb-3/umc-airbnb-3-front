@@ -95,8 +95,8 @@ nav {
 	padding-left: 1em;
 }
 #nav-user_profile > path {
-	width: 100%;
-	height: 100%;
+	width: 100%
+	height: 100%
 	padding-left: 1em;
 }
 .nav-text1 {
@@ -154,7 +154,7 @@ nav {
 	border: 0.1rem solid #ebebeb;
 }
 #nav-filter {
-	width: max-content;
+	width: 7.7em;
 	height: 4.8rem;
 	display: flex;
 	flex-direction: row;
@@ -166,7 +166,6 @@ nav {
 	padding: 10px;
 }
 #nav-filter > div {
-	width: max-content;
 	font-size: 1.2em;
 	padding-left: 10px;
 }
@@ -231,11 +230,10 @@ article > img {
 .content-score > svg {
 	margin-left: 0.5rem;
 }
-article:hover .article-hover {
+article:hover .article-hover{
 	display: block;
 }
-.next_image_btn,
-.pre_image_btn {
+.next_image_btn, .pre_image_btn{
 	display: none;
 	position: absolute;
 	top: 12rem;
@@ -243,23 +241,23 @@ article:hover .article-hover {
 	opacity: 0.8;
 	border-radius: 50%;
 }
-.next_image_btn > svg,
-.pre_image_btn > svg {
+.next_image_btn > svg, .pre_image_btn > svg{
 	margin: auto;
 }
-.next_image_btn {
+.next_image_btn{
 	width: 3rem;
 	height: 3rem;
 	right: 1rem;
 }
-.pre_image_btn {
+.pre_image_btn{
 	width: 3rem;
 	height: 3rem;
 	left: 1rem;
+
 }
 
 /*클릭 리스너*/
-#nav-search_bar-click {
+#nav-search_bar-click{
 	position: absolute;
 	display: none;
 	width: 100%;
@@ -267,7 +265,7 @@ article:hover .article-hover {
 	background: black;
 	opacity: 0.2;
 }
-#nav-search_bar-click-menu {
+#nav-search_bar-click-menu{
 	display: none;
 	width: 100%;
 	height: 8rem;
@@ -276,29 +274,29 @@ article:hover .article-hover {
 	background: white;
 	overflow: hidden;
 }
-#nav-search_bar-click-menu > #nav-top {
+#nav-search_bar-click-menu > #nav-top{
 	border: none;
 }
-#nav-search-click {
+#nav-search-click{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-#nav-search-click > button {
+#nav-search-click > button{
 	padding: 1rem 0;
 	margin: 0 1.5rem;
 }
-.nav-click-text {
+.nav-click-text{
 	font-size: 1.6rem;
 }
-#nav-search-click > button:hover {
+#nav-search-click > button:hover{
 	color: var(--text);
 	border-bottom: 0.2rem solid var(--border);
 }
-#nav-bottom-click {
+#nav-bottom-click{
 	height: 6.6rem;
 }
-#nav-bottom-click > div {
+#nav-bottom-click > div{
 	width: 85rem;
 	height: 100%;
 	border: 1px solid var(--border);
@@ -308,23 +306,17 @@ article:hover .article-hover {
 	flex-direction: row;
 	margin: auto;
 }
-.nav-bottom-menu {
+.nav-bottom-menu{
 	width: 100%;
 	border-radius: 4rem;
 }
-.nav-bottom-menu {
+.nav-bottom-menu{
 	padding: 0 3rem;
 	text-align: left;
 }
-.nav-bottom-menu:hover {
+.nav-bottom-menu:hover{
 	background: white;
 }
-.nav-bottom-menu-title {
+.nav-bottom-menu-title{
 	font-size: 1.2rem;
-	font-weight: 700;
-	margin-bottom: 0.5rem;
-}
-.nav-bottom-menu-text {
-	color: var(--text);
-	font-size: 1.4rem;
 }
