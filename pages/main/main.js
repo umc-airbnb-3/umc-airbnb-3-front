@@ -1,19 +1,9 @@
 /*스크롤*/
 var scrollableElement = document.body; //document.getElementById('scrollableElement');
-scrollableElement.addEventListener("wheel", checkScrollDirection);
+scrollableElement.addEventListener("wheel", checkScrollDetection);
 
-function checkScrollDirection(event) {
-	if (checkScrollDirectionIsUp(event)) {
-		console.log("UP");
-	} else {
-		console.log("Down");
-	}
-}
-
-function checkScrollDirectionIsUp(event) {
-	if (event.wheelDelta) {
-		return event.wheelDelta > 0;
-	}
+function checkScrollDetection(event) {
+	document.querySelector("section").appendChild(document.querySelector("#one-cycle").innerHTML);
 }
 
 /*카테고리 불러오기*/
@@ -46,13 +36,18 @@ async function get_category_article(category_idx, get_idx) {
 	getNum = get_idx + 50;
 	for (let i = get_idx; i < getNum; i++) {
 		const article_info = article_infos["result"][i];
-		articles[i].querySelector("img").setAttribute("src", article_info["hotelInstructionImgs"][1]);
-		const info = articles[i].querySelector("div.article-content");
-		info.querySelector(".content-first>.content-destination").textContent = article_info["region"];
-		info.querySelectorAll(".content-info")[0].textContent = article_info["distance"];
-		info.querySelectorAll(".content-info")[1].textContent = article_info["baseDate"];
-		info.querySelector(".content-price").textContent = article_info["fee"];
-		info.querySelector(".content-score>span").textContent = article_info["avgGrade"];
+		console.log(article_info);
+		if (article_info == undefined) {
+			articles[i].querySelector("img").setAttribute("src", "https://via.placeholder.com/300/?text=noData.png");
+		} else {
+			articles[i].querySelector("img").setAttribute("src", article_info["hotelInstructionImgs"][1]);
+			const info = articles[i].querySelector("div.article-content");
+			info.querySelector(".content-first>.content-destination").textContent = article_info["region"];
+			info.querySelectorAll(".content-info")[0].textContent = article_info["distance"];
+			info.querySelectorAll(".content-info")[1].textContent = article_info["baseDate"];
+			info.querySelector(".content-price").textContent = article_info["fee"];
+			info.querySelector(".content-score>span").textContent = article_info["avgGrade"];
+		}
 	}
 }
 get_category_article(1, 0);
